@@ -1,0 +1,7 @@
+MIDlet-1: MIDlet-1,,com.itsdarkhere.modrupal.ModrupalMidlet
+MIDlet-Jar-URL: modrupal.jar
+MicroEdition-Configuration: CLDC-1.1
+MIDlet-Version: 1.0.0
+MIDlet-Vendor: MIDlet Suite Vendor
+MIDlet-Name: modrupal MIDlet Suite
+MicroEdition-Profile: MIDP-2.1

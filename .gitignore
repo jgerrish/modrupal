@@ -1,0 +1,5 @@
+bin/**/*
+deployed/**/*
+dist/*
+.mtj.tmp/**/*
+**.swp

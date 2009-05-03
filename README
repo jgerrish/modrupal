@@ -1,0 +1,31 @@
+Modrupal a Mobile Library for the Drupal Services Module
+
+Author: Joshua Gerrish <jgerrish@gmail.com>
+Version 0.1
+
+
+This library provides an interface to the Drupal Services module.
+The Drupal Services module provides web services to Drupal core
+functionality.  This library provides a set of Java classes to 
+use the XML-RPC servers provided by the Drupal Services module.
+
+The library is packaged for use on mobile devices that run Java, such
+as MIDP, BlackBerry, and Google Android phones.
+
+
+Requirements:
+
+This library requires several additional libraries:
+
+  kxml2 (2.3.0)
+  A small XML parsing Java library
+
+  kxmlrpc (1.1.2)
+  A small XML-RPC Java library
+
+  Bouncy Castle lightweight crypto library (1.43)
+  A small set of crypto routines for Java
+
+I have provided reduced versions of all of these libraries in the lib
+directory.  I have also included the licenses for each package in the lib
+directory.

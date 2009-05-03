@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="src" path="test"/>
+	<classpathentry kind="con" path="org.elipse.mtj.JavaMEContainer/Sun Java(TM) Wireless Toolkit 2.5.2_01 for CLDC/DefaultColorPhone"/>
+	<classpathentry exported="true" kind="lib" path="C:/workspace/modrupal/lib/kxmlrpc-1.1.2.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/workspace/modrupal/lib/kxml2-2.3.0.jar"/>
+	<classpathentry exported="true" kind="lib" path="lib/lcrypto-modrupal-1.43.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

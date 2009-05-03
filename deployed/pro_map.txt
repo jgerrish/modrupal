@@ -1,0 +1,187 @@
+com.itsdarkhere.modrupal.AuthInterface -> com.itsdarkhere.modrupal.a:
+    java.lang.String api_key -> a
+    java.lang.String domain -> b
+    java.lang.String method -> c
+    java.lang.String hash -> d
+    java.lang.String nonce -> e
+    java.lang.String timestamp -> f
+    java.lang.String session -> g
+com.itsdarkhere.modrupal.ModrupalMidlet -> com.itsdarkhere.modrupal.ModrupalMidlet:
+    void startApp() -> startApp
+    void destroyApp(boolean) -> destroyApp
+    void pauseApp() -> pauseApp
+com.itsdarkhere.modrupal.ModrupalServiceClient -> com.itsdarkhere.modrupal.b:
+    org.kxmlrpc.XmlRpcClient client -> b
+    com.itsdarkhere.modrupal.AuthInterface auth -> a
+    java.lang.Object execute(java.lang.String,java.util.Vector) -> a
+    void setSession(java.lang.String) -> a
+com.itsdarkhere.modrupal.services.ModrupalService -> a:
+    com.itsdarkhere.modrupal.ModrupalServiceClient client -> a
+    java.lang.Object session_call(java.lang.String,java.util.Vector) -> a
+com.itsdarkhere.modrupal.services.SystemService -> i:
+    java.util.Hashtable connect() -> a
+com.itsdarkhere.modrupal.services.TaxonomyService -> g:
+    java.util.Vector selectNodes(java.util.Vector,java.util.Vector) -> a
+com.itsdarkhere.modrupal.services.UserService -> b:
+    java.util.Hashtable login(java.lang.String,java.lang.String) -> a
+org.bouncycastle.crypto.CipherParameters -> p:
+    byte[] key -> a
+    byte[] getKey() -> a
+org.bouncycastle.crypto.Digest -> n:
+    java.lang.String getAlgorithmName() -> a
+    void update(byte[],int,int) -> a
+    int doFinal(byte[],int) -> b
+    void reset() -> b
+org.bouncycastle.crypto.ExtendedDigest -> e:
+org.bouncycastle.crypto.digests.GeneralDigest -> t:
+    byte[] xBuf -> a
+    int xBufOff -> b
+    long byteCount -> c
+    void update(byte) -> a
+    void update(byte[],int,int) -> a
+    void finish() -> d
+    void reset() -> b
+    void processWord(byte[],int) -> a
+    void processLength(long) -> a
+    void processBlock() -> c
+org.bouncycastle.crypto.digests.SHA256Digest -> j:
+    int H1 -> a
+    int H2 -> b
+    int H3 -> c
+    int H4 -> d
+    int H5 -> e
+    int H6 -> f
+    int H7 -> g
+    int H8 -> h
+    int[] X -> i
+    int xOff -> j
+    int[] K -> k
+    java.lang.String getAlgorithmName() -> a
+    void processWord(byte[],int) -> a
+    void unpackWord(int,byte[],int) -> a
+    void processLength(long) -> a
+    int doFinal(byte[],int) -> b
+    void reset() -> b
+    void processBlock() -> c
+    int Ch(int,int,int) -> a
+    int Maj(int,int,int) -> b
+    int Sum0(int) -> a
+    int Sum1(int) -> b
+org.bouncycastle.crypto.macs.HMac -> s:
+    org.bouncycastle.crypto.Digest digest -> a
+    int digestSize -> b
+    int blockLength -> c
+    byte[] inputPad -> d
+    byte[] outputPad -> e
+    java.util.Hashtable blockLengths -> f
+    void init(org.bouncycastle.crypto.CipherParameters) -> a
+    int getMacSize() -> a
+    void update(byte[],int,int) -> a
+    int doFinal(byte[],int) -> a
+org.bouncycastle.util.encoders.Encoder -> r:
+    byte[] encodingTable -> a
+    byte[] decodingTable -> b
+    int encode(byte[],int,int,java.io.OutputStream) -> a
+    void initialiseDecodingTable() -> a
+org.bouncycastle.util.encoders.Hex -> f:
+    org.bouncycastle.util.encoders.Encoder encoder -> a
+    byte[] encode(byte[]) -> a
+    byte[] encode(byte[],int,int) -> a
+org.kobjects.base64.Base64 -> c:
+    char[] charTab -> a
+    java.lang.String encode(byte[]) -> a
+    int decode(char) -> a
+    byte[] decode(java.lang.String) -> a
+org.kxml2.io.KXmlParser -> q:
+    java.util.Hashtable entityMap -> b
+    int depth -> c
+    java.lang.String[] elementStack -> d
+    java.lang.String[] nspStack -> e
+    int[] nspCounts -> f
+    java.io.Reader reader -> g
+    char[] srcBuf -> h
+    int srcPos -> i
+    int srcCount -> j
+    int line -> k
+    int column -> l
+    char[] txtBuf -> m
+    int txtPos -> n
+    int type -> o
+    boolean isWhitespace -> p
+    java.lang.String namespace -> q
+    java.lang.String prefix -> r
+    java.lang.String name -> s
+    boolean degenerated -> t
+    int attributeCount -> u
+    java.lang.String[] attributes -> v
+    int stackMismatch -> w
+    java.lang.String error -> x
+    int[] peek -> y
+    int peekCount -> z
+    boolean wasCR -> A
+    boolean unresolved -> B
+    boolean token -> C
+    java.lang.String[] ensureCapacity(java.lang.String[],int) -> a
+    void exception(java.lang.String) -> a
+    int parseLegacy(boolean) -> a
+    void parseDoctype(boolean) -> b
+    int peekType() -> h
+    java.lang.String get(int) -> a
+    void push(int) -> b
+    void parseStartTag(boolean) -> c
+    void pushEntity() -> i
+    void pushText(int,boolean) -> a
+    void read(char) -> a
+    int read() -> j
+    int peek(int) -> c
+    java.lang.String readName() -> k
+    void skip() -> b
+    void setInput(java.io.Reader) -> a
+    java.lang.String getPositionDescription() -> a
+    java.lang.String getText() -> c
+    java.lang.String getName() -> d
+    int next() -> e
+    int nextTag() -> f
+    void require(int,java.lang.String,java.lang.String) -> a
+    java.lang.String nextText() -> g
+org.kxmlrpc.XmlRpcClient -> d:
+    java.lang.String url -> a
+    java.lang.Object result -> b
+    boolean debug -> c
+    java.lang.Object execute(java.lang.String,java.util.Vector) -> a
+org.kxmlrpc.XmlRpcException -> m:
+org.kxmlrpc.XmlRpcParser -> u:
+    org.kxml2.io.KXmlParser parser -> a
+    java.util.Vector params -> b
+    java.lang.Object parseValue() -> a
+    java.util.Hashtable parseStruct() -> b
+    java.util.Vector parseArray() -> c
+org.kxmlrpc.XmlRpcWriter -> l:
+    org.xmlpull.v1.XmlSerializer writer$3af8eb8c -> a
+    void writeCall(java.lang.String,java.util.Vector) -> a
+    void writeValue(java.lang.Object) -> a
+org.xmlpull.v1.XmlPullParser -> k:
+    java.lang.String[] TYPES -> a
+    java.lang.String getPositionDescription() -> a
+org.xmlpull.v1.XmlPullParserException -> o:
+    java.lang.Throwable detail -> a
+    void printStackTrace() -> printStackTrace
+org.xmlpull.v1.XmlSerializer -> h:
+    java.io.Writer writer -> a
+    boolean pending -> b
+    int auto -> c
+    int depth -> d
+    java.lang.String[] elementStack -> e
+    int[] nspCounts -> f
+    java.lang.String[] nspStack -> g
+    boolean[] indent -> h
+    boolean unicode -> i
+    void check(boolean) -> a
+    void writeEscaped(java.lang.String,int) -> a
+    void setOutput(java.io.Writer) -> a
+    org.xmlpull.v1.XmlSerializer startTag(java.lang.String,java.lang.String) -> a
+    void flush() -> a
+    org.xmlpull.v1.XmlSerializer endTag(java.lang.String,java.lang.String) -> b
+    java.lang.String getNamespace() -> b
+    int getDepth() -> c
+    org.xmlpull.v1.XmlSerializer text(java.lang.String) -> a
