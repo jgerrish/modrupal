@@ -2,6 +2,7 @@ Modrupal a Mobile Library for the Drupal Services Module
 
 Author: Joshua Gerrish <jgerrish@gmail.com>
 Version 0.1
+License: LGPL 3.0
 
 
 This library provides an interface to the Drupal Services module.
